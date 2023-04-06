@@ -6,6 +6,11 @@ name: Create Release
 
 jobs:
   build:
+    permissions:
+      id-token: write
+      packages: write
+      contents: read
+      
     name: Upload Release Asset
     runs-on: ubuntu-latest
     steps:
